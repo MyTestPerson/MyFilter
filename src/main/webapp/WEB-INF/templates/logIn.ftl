@@ -21,7 +21,7 @@
             <input type="password" id="password" name="password" value="1111">
         </p>
 
-        <#--noinspection FtlReferencesInspection-->
+
         <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
 
         <br>
