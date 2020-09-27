@@ -9,7 +9,7 @@
 <body>
 
 
-    <form name="user" method="POST" action="/login">
+    <form name="user" method="post" action="/login">
 
         <p>
             <label for="username">Username</label>

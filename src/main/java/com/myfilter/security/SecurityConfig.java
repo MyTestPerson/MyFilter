@@ -9,6 +9,7 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.web.authentication.AnonymousAuthenticationFilter;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 @Configuration
 @EnableWebSecurity
@@ -25,7 +26,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http
 
                 // I add a filter where I will catch POST parameters
-                .addFilterBefore(customFilter, AnonymousAuthenticationFilter.class)
+                .addFilterBefore(customFilter, UsernamePasswordAuthenticationFilter.class)
                 .authorizeRequests()
                 .mvcMatchers("/login","/").permitAll()
 
