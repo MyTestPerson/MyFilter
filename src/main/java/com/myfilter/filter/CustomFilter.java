@@ -17,11 +17,11 @@ public class CustomFilter extends GenericFilterBean {
 
         // I get the parameter
         String email = httpServletRequest.getParameter("email");
-        String header = httpServletRequest.getHeader("email" + " == Заголовок");
+        String method = httpServletRequest.getMethod();
 
         // Display to the console
-        System.out.println(email);
-        System.out.println(header);
+        System.out.println("Email == " + email);
+        System.out.println("Method == " + method);
 
         chain.doFilter(request, response);
     }
