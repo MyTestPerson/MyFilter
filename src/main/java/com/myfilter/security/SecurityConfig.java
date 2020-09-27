@@ -27,7 +27,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 // I add a filter where I will catch POST parameters
                 .addFilterBefore(customFilter, AnonymousAuthenticationFilter.class)
                 .authorizeRequests()
-                .mvcMatchers("/").permitAll()
+                .mvcMatchers("/login","/").permitAll()
 
                 // I indicate that the POST method will be used
                 .mvcMatchers(HttpMethod.POST,"/login").permitAll()
