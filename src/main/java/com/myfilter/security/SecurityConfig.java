@@ -30,7 +30,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .mvcMatchers("/").permitAll()
 
                 // I indicate that the POST method will be used
-                .mvcMatchers(HttpMethod.PUT,"/login").permitAll()
+                .mvcMatchers(HttpMethod.POST,"/login").permitAll()
 
                 .and()
                 .formLogin()
