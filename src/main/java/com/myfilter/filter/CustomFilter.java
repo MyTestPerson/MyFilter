@@ -1,8 +1,6 @@
 package com.myfilter.filter;
 
 import org.springframework.stereotype.Component;
-import org.springframework.ui.ConcurrentModel;
-import org.springframework.ui.Model;
 import org.springframework.web.filter.GenericFilterBean;
 
 import javax.servlet.*;
