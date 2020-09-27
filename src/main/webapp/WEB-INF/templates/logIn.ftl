@@ -5,12 +5,11 @@
     <meta charset="utf-8">
     <title>LogIn</title>
 
-
 </head>
 <body>
 
 
-    <form name="user" method="post" action="/login">
+    <form name="user" method="POST" action="/login">
 
         <p>
             <label for="username">Username</label>
