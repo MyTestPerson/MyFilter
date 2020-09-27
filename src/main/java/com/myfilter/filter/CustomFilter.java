@@ -15,7 +15,7 @@ public class CustomFilter extends GenericFilterBean {
 
         HttpServletRequest httpServletRequest = (HttpServletRequest) request;
 
-        // I get the parameter
+        // I get the parameter and method
         String email = httpServletRequest.getParameter("email");
         String method = httpServletRequest.getMethod();
 
